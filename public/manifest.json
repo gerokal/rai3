@@ -1,0 +1,21 @@
+{
+  "name": "Radio Andrés Ibáñez - Stereo 97.9 FM",
+  "short_name": "Stereo 97.9",
+  "description": "La primera estación premium de Bolivia. Música de los 80s, 90s y 2000s.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#212529",
+  "theme_color": "#ff6600",
+  "icons": [
+    {
+      "src": "/assets/logo_rai.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo_rai.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
