@@ -6,16 +6,36 @@
   "display": "standalone",
   "background_color": "#212529",
   "theme_color": "#ff6600",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "es-BO",
+  "categories": ["music", "radio", "entertainment"],
+  "dir": "ltr",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/assets/logo_rai.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/assets/logo_rai.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo_rai_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/logo_rai.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

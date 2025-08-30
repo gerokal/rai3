@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Facebook', url: 'https://www.facebook.com/radioandresibanez' },
-    { name: 'YouTube', url: 'https://www.youtube.com/@radioandresibanez97.9' },
-    { name: 'TikTok', url: 'https://www.tiktok.com/@radioandresibanez' },
-    { name: 'Instagram', url: 'https://www.instagram.com/radioandresibanez/' },
+    { name: 'Facebook', url: 'https://www.facebook.com/radioandresibanez', label: 'Visita nuestra página de Facebook' },
+    { name: 'YouTube', url: 'https://www.youtube.com/@radioandresibanez97.9', label: 'Visita nuestro canal de YouTube' },
+    { name: 'TikTok', url: 'https://www.tiktok.com/@radioandresibanez', label: 'Síguenos en TikTok' },
+    { name: 'Instagram', url: 'https://www.instagram.com/radioandresibanez/', label: 'Síguenos en Instagram' },
   ];
 
   return (
-    <footer className="bg-dark-bg-light text-on-dark pt-12 pb-8">
+  <footer className="bg-dark-bg text-on-dark pt-12 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -26,7 +26,14 @@ const Footer = () => {
             <h3 className="text-lg font-primary font-bold text-on-dark mb-4">Síguenos</h3>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
-                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="text-on-dark hover:text-primary transition-colors">
+                <a 
+                  key={link.name} 
+                  href={link.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-on-dark hover:text-primary transition-colors"
+                  aria-label={link.label}
+                >
                   {link.name}
                 </a>
               ))}
